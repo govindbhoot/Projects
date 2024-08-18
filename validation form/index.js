@@ -5,7 +5,7 @@ const email = document.getElementById('email');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
 
-// Add error message elements for each input field
+
 const firstnameError = document.createElement('small');
 firstnameError.classList.add('error');
 firstname.parentNode.insertBefore(firstnameError, firstname.nextSibling);
