@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ with Tabs and Accordions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Frequently Asked Questions (FAQ)</h1>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link active" id="v-pills-general-tab" data-bs-toggle="pill" data-bs-target="#v-pills-general" type="button" role="tab" aria-controls="v-pills-general" aria-selected="true">General</button>
+                    <button class="nav-link" id="v-pills-pricing-tab" data-bs-toggle="pill" data-bs-target="#v-pills-pricing" type="button" role="tab" aria-controls="v-pills-pricing" aria-selected="false">Pricing</button>
+                    <button class="nav-link" id="v-pills-support-tab" data-bs-toggle="pill" data-bs-target="#v-pills-support" type="button" role="tab" aria-controls="v-pills-support" aria-selected="false">Support</button>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-general" role="tabpanel" aria-labelledby="v-pills-general-tab">
+                        <div class="accordion" id="accordionGeneral">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        What is This website about ?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionGeneral">
+                                    <div class="accordion-body">
+                                        This website is a platform for to book a Hotel room (with minimum price and best experirnce)...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        How do I sign up?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionGeneral">
+                                    <div class="accordion-body">
+                                        To sign up, you need to register first on our registration page.(you need to provide your  personal detaials including mail and phone no. ) 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        What are the benefits of using this website?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionGeneral">
+                                    <div class="accordion-body">
+                                        Benefits include
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Offers/Discount</li>
+                                            <li class="list-group-item">Easy to find nearby Hotel</li>
+                                            <li class="list-group-item">Don't need to visit hotel for booking </li>
+                                            <li class="list-group-item">Book before anyone else</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-pricing" role="tabpanel" aria-labelledby="v-pills-pricing-tab">
+                        <div class="accordion" id="accordionPricing">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pricingOne" aria-expanded="true" aria-controls="pricingOne">
+                                        What are the pricing plans?
+            
+                                    </button>
+                                </h2>
+                                <div id="pricingOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionPricing">
+                                    <div class="accordion-body">
+                                        We offer: List pricing plans
+                                        <ul class="list-group">
+                                            <li class="list-group-item">its 2000 for one nigth for single room</li>
+                                            <li class="list-group-item">its 2700 for a one night for single room with balcony </li>
+                                            <li class="list-group-item">for luxury room it starts from 5000 to 30000 according to ur choice </li>
+                                            <li class="list-group-item">you have to pay extra for extra service</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pricingTwo" aria-expanded="false" aria-controls="pricingTwo">
+                                        How can I upgrade my plan?
+                                    </button>
+                                </h2>
+                                <div id="pricingTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionPricing">
+                                    <div class="accordion-body">
+                                        To upgrade, you can check on app or you can go to reception 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pricingThree" aria-expanded="false" aria-controls="pricingThree">
+                                        What payment methods are accepted?
+                                    </button>
+                                </h2>
+                                <div id="pricingThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionPricing">
+                                    <div class="accordion-body">
+                                        We accept several List payment methods:
+                                        <ul class="list-group">
+                                            <li class="list-group-item">UPI</li>
+                                            <li class="list-group-item">Cards
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <label class="form-check-label" for="flexRadioDefault1"> Debit Card</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <label class="form-check-label" for="flexRadioDefault1"> Credit Card</label>
+                                                </div>
+                                             </li>
+                                            <li class="list-group-item">CASH (in the time of check in) </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-support" role="tabpanel" aria-labelledby="v-pills-support-tab">
+                        <div class="accordion" id="accordionSupport">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#supportOne" aria-expanded="true" aria-controls="supportOne">
+                                        How can I help ?
+                                        </button>
+                                        </h2>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        
+
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+                    </body>
+                    </html>
